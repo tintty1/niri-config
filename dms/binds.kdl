@@ -54,6 +54,7 @@ binds {
     Mod+Shift+U { move-workspace-down; }
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+    Mod+X { move-workspace-to-monitor-next; }
     Super+Ctrl+J { focus-workspace-down; }
     Super+Ctrl+K { focus-workspace-up; }
     Super+N { focus-workspace-down; }
@@ -124,12 +125,10 @@ binds {
     Ctrl+XF86Launch1 { screenshot-screen; }
     Print { screenshot; }
     XF86Launch1 { screenshot; }
-    Mod+Shift+E { quit; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Super+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }
     Super+Return { spawn "kitty"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Tab repeat=false { toggle-overview; }
-    Mod+X { move-workspace-to-monitor-next; }
 }
