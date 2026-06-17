@@ -199,6 +199,8 @@ environment {
 hotkey-overlay {
     skip-at-startup
 }
+spawn-at-startup "fcitx5"
+spawn-at-startup "slack"
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
@@ -325,6 +327,7 @@ binds {
   Mod+S { focus-workspace "scratch" ;}
   Mod+Z { move-window-to-workspace "scratch"; }
   Mod+Shift+E { spawn "/home/tin/tin/config/scripts/text-edit.sh"; }
+  Mod+grave { focus-monitor-next ; }
 }
 
 // Include dms files
