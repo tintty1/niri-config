@@ -200,7 +200,8 @@ hotkey-overlay {
     skip-at-startup
 }
 spawn-at-startup "fcitx5"
-spawn-at-startup "slack"
+
+// spawn-at-startup "slack"
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
