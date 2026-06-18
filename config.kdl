@@ -305,6 +305,16 @@ window-rule {
     default-window-height { proportion 0.66667; }
 }
 
+
+// float slack
+window-rule {
+    match app-id="slack"
+    open-floating true
+
+    default-column-width { proportion 0.66667; }
+    default-window-height { proportion 0.75; }
+}
+
 debug {
     honor-xdg-activation-with-invalid-serial
 }
