@@ -150,7 +150,7 @@ layout {
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
     // You can change the default width of the new windows.
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.5; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
     // By default focus ring and border are rendered as a solid background rectangle
@@ -314,6 +314,12 @@ window-rule {
 
     default-column-width { proportion 0.66667; }
     default-window-height { proportion 0.75; }
+}
+
+window-rule {
+    match app-id="google-chrome"
+
+    default-column-width { proportion 1.0; }
 }
 
 debug {
