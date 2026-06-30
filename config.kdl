@@ -378,6 +378,7 @@ binds {
   Mod+grave { focus-monitor-next ; }
   Mod+period { focus-workspace-previous ; }
   Mod+F { spawn "/home/tin/tin/config/scripts/maximize-window.sh"; } // overrides dms/binds.kdl
+  Mod+Slash hotkey-overlay-title="Switch Windows" { spawn "dms" "ipc" "call" "spotlight" "openQuery" "!"; } // DankNiriWindows plugin
 
   Mod+J { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "down"; }
   Mod+K { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "up"; }
