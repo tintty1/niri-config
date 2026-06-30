@@ -1,0 +1,15 @@
+workspace "dev" {
+  open-on-output "HDMI-A-1"
+}
+workspace "scratch" {
+  open-on-output "HDMI-A-1"
+}
+workspace "web" {
+  open-on-output "eDP-1"
+}
+workspace "media" {
+  open-on-output "eDP-1"
+}
+workspace "chat" {
+  open-on-output "eDP-1"
+}

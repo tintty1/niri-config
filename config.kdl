@@ -310,6 +310,7 @@ window-rule {
 // float slack
 window-rule {
     match app-id="slack"
+    open-on-workspace "chat"
     open-floating true
 
     default-column-width { proportion 0.66667; }
@@ -335,12 +336,21 @@ window-rule {
 
 window-rule {
     match app-id="google-chrome"
+    open-on-workspace "web"
+
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id=r"(s|S)potify"
+    open-on-workspace "media"
 
     default-column-width { proportion 1.0; }
 }
 
 window-rule {
     match app-id="firefox"
+    open-on-workspace "web"
 
     default-column-width { proportion 1.0; }
 }
@@ -359,9 +369,6 @@ recent-windows {
     }
 }
 
-workspace "scratch" {
-
-}
 
 binds {
   Mod+S { focus-workspace "scratch" ;}
@@ -369,6 +376,9 @@ binds {
   Mod+Shift+E { spawn "/home/tin/tin/config/scripts/text-edit.sh"; }
   Mod+grave { focus-monitor-next ; }
 }
+
+
+include "outputs.kdl"
 
 // Include dms files
 include "dms/colors.kdl"
