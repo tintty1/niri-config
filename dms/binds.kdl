@@ -79,7 +79,7 @@ binds {
     Mod+Ctrl+WheelScrollRight { move-column-right; }
     Mod+End { focus-column-last; }
     Mod+Equal { set-column-width "+10%"; }
-    Mod+F { maximize-column; }
+    /-Mod+F { maximize-column; } // overridden in config.kdl (maximize-window.sh)
     Mod+H { focus-column-left; }
     Mod+Home { focus-column-first; }
     Mod+L { focus-column-right; }
