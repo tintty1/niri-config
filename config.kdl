@@ -379,6 +379,8 @@ binds {
 
   Mod+J { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "down"; }
   Mod+K { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "up"; }
+  Mod+Down { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "down"; }
+  Mod+Up { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "up"; }
 }
 
 
