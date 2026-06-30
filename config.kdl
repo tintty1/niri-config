@@ -371,10 +371,14 @@ recent-windows {
 
 
 binds {
-  Mod+S { focus-workspace "scratch" ;}
+  Mod+S { spawn "/home/tin/tin/config/scripts/toggle-scratch.sh"; }
   Mod+Z { move-window-to-workspace "scratch"; }
   Mod+Shift+E { spawn "/home/tin/tin/config/scripts/text-edit.sh"; }
   Mod+grave { focus-monitor-next ; }
+  Mod+period { focus-workspace-previous ; }
+
+  Mod+J { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "down"; }
+  Mod+K { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "up"; }
 }
 
 

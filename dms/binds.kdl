@@ -77,18 +77,18 @@ binds {
     Mod+Ctrl+Shift+WheelScrollUp { move-column-left; }
     Mod+Ctrl+WheelScrollLeft { move-column-left; }
     Mod+Ctrl+WheelScrollRight { move-column-right; }
-    Mod+Down { focus-window-down; }
+    Mod+Down { focus-workspace-down; }
     Mod+End { focus-column-last; }
     Mod+Equal { set-column-width "+10%"; }
     Mod+F { maximize-column; }
+    // Mod+J/K overridden by focus-spill.sh binds in config.kdl (edge-spills to adjacent workspace)
     Mod+H { focus-column-left; }
     Mod+Home { focus-column-first; }
-    Mod+J { focus-window-down; }
-    Mod+K { focus-window-up; }
+    /-Mod+J { focus-window-down; }
+    /-Mod+K { focus-window-up; }
     Mod+L { focus-column-right; }
     Mod+Left { focus-column-left; }
     Mod+Minus { set-column-width "-10%"; }
-    Mod+Period { expel-window-from-column; }
     Mod+Q repeat=false { close-window; }
     Mod+R { switch-preset-column-width; }
     Mod+Right { focus-column-right; }
@@ -114,7 +114,7 @@ binds {
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+Shift+WheelScrollDown { focus-column-right; }
     Mod+Shift+WheelScrollUp { focus-column-left; }
-    Mod+Up { focus-window-up; }
+    Mod+Up { focus-workspace-up; }
     Mod+W { toggle-column-tabbed-display; }
     Mod+WheelScrollLeft { focus-column-left; }
     Mod+WheelScrollRight { focus-column-right; }
