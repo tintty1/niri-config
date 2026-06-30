@@ -373,8 +373,7 @@ recent-windows {
 
 binds {
   Mod+S { spawn "/home/tin/tin/config/scripts/toggle-scratch.sh"; }
-  // Mod+Z { move-window-to-workspace "scratch"; }
-  Mod+Z { fullscreen-window; } // tmux-style zoom: fill usable area, toggle back
+  Mod+Z { move-window-to-workspace "scratch"; }
   Mod+Shift+E { spawn "/home/tin/tin/config/scripts/text-edit.sh"; }
   Mod+grave { focus-monitor-next ; }
   Mod+period { focus-workspace-previous ; }
