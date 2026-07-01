@@ -7,9 +7,9 @@ workspace "scratch" {
 workspace "web" {
   open-on-output "eDP-1"
 }
-workspace "media" {
+workspace "chat" {
   open-on-output "eDP-1"
 }
-workspace "chat" {
+workspace "media" {
   open-on-output "eDP-1"
 }
