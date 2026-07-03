@@ -356,6 +356,12 @@ window-rule {
     default-column-width { proportion 1.0; }
 }
 
+window-rule {
+    match app-id="niri"
+    default-column-width { proportion 1.0; }
+    open-floating false
+}
+
 debug {
     honor-xdg-activation-with-invalid-serial
 }
