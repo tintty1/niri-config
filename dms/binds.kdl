@@ -116,9 +116,9 @@ binds {
     Super+Alt+F { fullscreen-window; }
     Super+Shift+F { toggle-window-floating; }
     Mod+Shift+P { power-off-monitors; }
-    Ctrl+Print { screenshot-screen; }
+    /-Ctrl+Print { screenshot-screen; } // overridden in config.kdl (screenshot-satty.sh)
     Ctrl+XF86Launch1 { screenshot-screen; }
-    Print { screenshot; }
+    /-Print { screenshot; } // overridden in config.kdl (screenshot-satty.sh)
     XF86Launch1 { screenshot; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Super+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }

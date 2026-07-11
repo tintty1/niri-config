@@ -268,6 +268,7 @@ window-rule {
     match app-id=r#"^blueman-manager$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^xdg-desktop-portal$"#
+    match app-id=r#"^com\.gabm\.satty$"#
     open-floating true
 }
 window-rule {
@@ -359,6 +360,7 @@ window-rule {
 window-rule {
     match app-id="niri"
     default-column-width { proportion 1.0; }
+    open-on-workspace "niri"
     open-floating false
 }
 
@@ -390,6 +392,9 @@ binds {
   Mod+K { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "up"; }
   Mod+Down { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "down"; }
   Mod+Up { spawn "/home/tin/tin/config/scripts/focus-spill.sh" "up"; }
+
+  Print { spawn "/home/tin/tin/config/scripts/screenshot-satty.sh" "region"; } // overrides dms/binds.kdl
+  Ctrl+Print { spawn "/home/tin/tin/config/scripts/screenshot-satty.sh" "screen"; } // overrides dms/binds.kdl
 }
 
 
